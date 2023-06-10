@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artgallery</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #EAF2F8, #F2F2F2);
+            background-color: #C1F2D3; 
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        } 
+
+        .tower {
+            width: 600px;
+            height: 100vh;
+            animation: colorTransition 10s infinite;
+            border-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-image: url('/Users/anna-lenapaszior/Downloads/artgalleryone.png');
+            background-size: 50% auto;
+            background-position: center;
+         
+        }
+
+        @keyframes colorTransition {
+            0% { background-color: #ffe6e6; } /* Lighter shade of red */
+            16.67% { background-color: #ffebe6; } /* Lighter shade of orange */
+            33.33% { background-color: #ffffe6; } /* Lighter shade of yellow */
+            50% { background-color: #e6ffe6; } /* Lighter shade of green */
+            66.67% { background-color: #e6f2ff; } /* Lighter shade of blue */
+            83.33% { background-color: #e6ccff; } /* Lighter shade of indigo */
+            100% { background-color: #ffe6ff; } /* Lighter shade of violet */
+        }
+
+        .text-container {
+            position: absolute;
+            top:0;
+            left:0;
+            width:50%;
+            height:100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 20px; /* Adjust margin as needed */
+            text-align:center;
+            padding-left: 4px;
+        }
+
+        .right-text-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 20px; /* Adjust margin as needed */
+            text-align: center;
+            padding-right: 0px;
+            transform:translateX(65%);
+
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+        .elegant-text {
+                font-family: 'Amatic SC', sans-serif;
+                font-weight: lighter;
+                font-size: 20px;
+                color: #8d688d; /* Elegant color of your choice */
+            }
+        .text {
+            
+          
+            font-size: 20px;
+        }
+
+        .price-text {
+            color: #999999; /* Replace with the desired color for the price text */
+        }
+
+        .lower-right-container {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            background-color: ivory;
+            padding: 10 px;
+          
+        }
+
+        .lower-right-text {
+                
+                font-family: 'Amatic SC', sans-serif;
+                font-size: 12px;
+                font-weight:bolder;
+                color: #999999;
+                padding: 10px;
+                margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div class="tower">
+            
+        </div>
+    </div>
+
+    <div class="text-container">
+        <p class="elegant-text">Aurora, Aurora, <br>
+                        my magic little light. <br>
+                        The night is cold <br>
+                        so hold me tight. <br>
+                        <br>
+                        <br>
+                        Sing with, me, <br>
+                        Dance with me <br>
+                        Take me with you <br>
+                        when I whistle. <br>
+                        <br>
+                        I hear your melody,<br> 
+                        I want to join you <br> 
+                        in my lonely missile<br>
+                        <br>
+                        <br>
+                        Aurora, Aurora,  <br>
+                        whatever you may decide,<br>
+                        Some day I'll come with you, <br>
+                        but not tonight.</p>
+    </div>
+    <div class="right-text-container">
+        <p2 class="elegant-text"><span class="price-text">Aurora <br>
+                            2023<br>
+                                 by Sophie Bargen <br>
+                                 <br>
+                                 Price: 8000 NOK</span><br>
+                                
+                                </p>
+                    
+    </div>
+    <a href=" https://sophiebargen.github.io/Ishiko.artgallerytwo/" target="_blank">
+        <div class="lower-right-container">
+            <p class="lower-right-text">-></p>
+        </div>
+    </a>
+</body>
+</html>
